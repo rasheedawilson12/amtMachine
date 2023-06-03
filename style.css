@@ -1,0 +1,72 @@
+.atmContainer {
+  margin: 0 auto;
+  border: solid red;
+  width: 80%;
+}
+
+.miniScreen {
+  display: flex;
+  justify-content: space-evenly;
+  border: solid blue;
+  height: 60vh;
+  width: 75vw;
+}
+
+.leftPannel {
+  border: solid green;
+  height: 60vh;
+  width: 25vw;
+}
+
+.leftPannelButtonOne,
+.leftPannelButtonTwo,
+.leftPannelButtonThree {
+  border: solid turquoise;
+  height: 20vh;
+  width: 25vw;
+}
+
+.mainScreen {
+  border: solid purple;
+  height: 60vh;
+  width: 50vw;
+}
+
+.rightPannel {
+  border: solid pink;
+  height: 60vh;
+  width: 25vw;
+}
+
+.rightPannelButtonOne,
+.rightPannelButtonTwo,
+.rightPannelButtonThree {
+  border: solid turquoise;
+  height: 20vh;
+  width: 25vw;
+}
+
+.keypad {
+  display: block;
+  margin: 0 auto;
+  border: solid peru;
+  height: 40vh;
+  width: 50vw;
+}
+
+.rowOne,
+.rowTwo,
+.rowThree,
+.rowFour {
+  display: flex;
+  justify-content: space-evenly;
+  border: solid orange;
+  height: 20vh;
+  width: 50vw;
+}
+
+.key {
+  border: solid black;
+  height: 10vh;
+  width: 10vw;
+}
