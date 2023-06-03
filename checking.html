@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>ATM Machine</title>
+    <title>Checking Account</title>
   </head>
   <body>
     <!-- Main Welcome Screen -->
@@ -15,21 +15,28 @@
       <div class="miniScreen">
         <!-- Left Pannel -->
         <div class="leftPannel">
+          <h1 class="depositHeader">Desposit</h1>
           <div class="leftPannelButtonOne">
-            <a href="savings.html"
-              ><span class="optionButton">$50</span><i class="arrow right"></i
-            ></a>
+            <span
+              class="optionButton"
+              onclick="depositTwentyDollarsToChecking()"
+              >$20</span
+            ><i class="arrow right"></i>
           </div>
           <div class="leftPannelButtonTwo">
-            <a href="deposit.html"
-              ><span class="optionButton">$100</span><i class="arrow right"></i
-            ></a>
+            <span class="optionButton" onclick="depositFiftyDollarsToChecking()"
+              >$50</span
+            ><i class="arrow right"></i>
           </div>
           <div class="leftPannelButtonThree">
-            <span class="optionButton">$200</span><i class="arrow right"></i>
+            <span
+              class="optionButton"
+              onclick="depositOneHundredDollarsToChecking()"
+              >$100</span
+            ><i class="arrow right"></i>
           </div>
           <div class="leftPannelButtonFour">
-            <span class="optionButton">Other: <input type="number" /></span>
+            <span class="optionButton">Other:</span>
             <i class="arrow right"></i>
           </div>
         </div>
@@ -37,7 +44,13 @@
         <!-- Screen -->
         <div class="mainScreen">
           <h1>Checking</h1>
-          <h2>You Checking Account Balance is:</h2>
+          <button class="showChecking" onclick="showCheckingBalance()">
+            Show Balance
+          </button>
+          <h2>
+            Your Savings Account Balance is: <br />
+            <span class="checkingBalance"></span>
+          </h2>
 
           <img
             src="https://easydrawingguides.com/wp-content/uploads/2017/05/how-to-draw-a-cartoon-squirrel-20.png"
@@ -47,24 +60,33 @@
         </div>
         <!-- Right Pannel -->
         <div class="rightPannel">
+          <h1 class="depositHeader">Withdraw</h1>
           <div class="rightPannelButtonOne">
-            <a href="checking.html"
-              ><i class="arrow left"></i
-              ><span class="optionButton">Checking</span></a
+            <i class="arrow left"></i
+            ><span
+              class="optionButton"
+              onclick="withdrawTwentyDollarsFromChecking()"
+              >$20</span
             >
           </div>
           <div class="rightPannelButtonTwo">
-            <a href="withdraw.html"
-              ><i class="arrow left"></i
-              ><span class="optionButton">Withdraw</span></a
+            <i class="arrow left"></i
+            ><span
+              class="optionButton"
+              onclick="withdrawFiftyDollarswithdrawFromChecking()"
+              >$50</span
             >
           </div>
-          <div class="rightPannelButtonThree"><i class="arrow left"></i></div>
-          <div class="rightPannelButtonFour">
-            <a href=".../"
-              ><i class="arrow left"></i
-              ><span class="optionButton">Back</span></a
+          <div class="rightPannelButtonThree">
+            <i class="arrow left"></i
+            ><span
+              class="optionButton"
+              onclick="withdrawOneHundredDollarswithdrawFromChecking()"
+              >$100</span
             >
+          </div>
+          <div class="rightPannelButtonFour">
+            <i class="arrow left"></i><span class="optionButton">Other:</span>
           </div>
         </div>
         <!-- Keypad -->

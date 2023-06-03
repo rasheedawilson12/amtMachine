@@ -4,6 +4,8 @@ const pinScreen = document.querySelector(".pinScreen");
 
 const savingsBalance = document.querySelector(".savingsBalance");
 
+const checkingBalance = document.querySelector(".checkingBalance");
+
 // const despositTwenty = document.querySelector(".despositTwenty");
 
 // const depositFifty = document.querySelector(".depositFifty")
@@ -38,28 +40,28 @@ const showSavingsBalance = () => {
 };
 
 // Deposit to Savings Account
-const depositTwentyDollars = () => {
+const depositTwentyDollarsToSavings = () => {
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) + parseInt(20);
 
   savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
 };
 
-const depositFiftyDollars = () => {
+const depositFiftyDollarsToSavingsToSavings = () => {
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) + parseInt(50);
 
   savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
 };
 
-const depositOneHundredDollars = () => {
+const depositOneHundredDollarsToSavings = () => {
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) + parseInt(100);
 
   savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
 };
 
-const depositOtherAmount = () => {
+const depositOtherAmountToSavings = () => {
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) + parseInt(20);
 
@@ -67,30 +69,95 @@ const depositOtherAmount = () => {
 };
 
 // Withdraw from Savings Account
-const withdrawTwentyDollars = () => {
+const withdrawTwentyDollarsFromSavings = () => {
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) - parseInt(20);
 
   savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
 };
 
-const withdrawFiftyDollars = () => {
+const withdrawFiftyDollarsFromSavings = () => {
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) - parseInt(50);
 
   savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
 };
 
-const withdrawOneHundredDollars = () => {
+const withdrawOneHundredDollarsFromSavings = () => {
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) - parseInt(100);
 
   savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
 };
 
-const withdrawOtherAmount = () => {
+const withdrawOtherAmountFromSavings = () => {
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) - parseInt(20);
 
   savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
+};
+
+// Display Checking Balance
+const showCheckingBalance = () => {
+  const checkingAccountBalance = accountInfo.checkingAccount;
+
+  checkingBalance.innerHTML = `$${checkingAccountBalance}`;
+};
+
+// Deposit to Savings Account
+const depositTwentyDollarsToChecking = () => {
+  const currentCheckingBalance =
+    parseInt(accountInfo.checkingAccount) + parseInt(20);
+
+  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+};
+
+const depositFiftyDollarsToChecking = () => {
+  const currentCheckingBalance =
+    parseInt(accountInfo.checkingAccount) + parseInt(50);
+
+  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+};
+
+const depositOneHundredDollarsToChecking = () => {
+  const currentCheckingBalance =
+    parseInt(accountInfo.checkingAccount) + parseInt(100);
+
+  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+};
+
+const depositOtherAmountDollarsToChecking = () => {
+  const currentCheckingBalance =
+    parseInt(accountInfo.checkingAccount) + parseInt(20);
+
+  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+};
+
+// Withdraw from Checking Account
+const withdrawTwentyDollarsFromChecking = () => {
+  const currentCheckingBalance =
+    parseInt(accountInfo.checkingAccount) - parseInt(20);
+
+  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+};
+
+const withdrawFiftyDollarsFromChecking = () => {
+  const currentCheckingBalance =
+    parseInt(accountInfo.checkingAccount) - parseInt(50);
+
+  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+};
+
+const withdrawOneHundredDollarsFromChecking = () => {
+  const currentCheckingBalance =
+    parseInt(accountInfo.checkingAccount) - parseInt(100);
+
+  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+};
+
+const withdrawOtherAmountFromChecking = () => {
+  const currentCheckingBalance =
+    parseInt(accountInfo.checkingAccount) - parseInt(20);
+
+  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
 };
