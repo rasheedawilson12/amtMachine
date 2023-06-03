@@ -14,7 +14,6 @@
 .leftPannel {
   display: block;
   border: solid darkgrey;
-  height: 60vh;
   width: 25%;
 }
 
@@ -26,9 +25,9 @@
   justify-content: space-evenly;
   border: solid lightgrey;
   text-align: right;
-  height: 20%;
   width: 75%;
   margin: 20px auto;
+  padding: 20px;
 }
 
 /* Side Pannel Button Options */
@@ -43,7 +42,6 @@
 
 .rightPannel {
   display: block;
-  height: 60vh;
   width: 25%;
   border: solid darkgray;
 }
@@ -56,9 +54,9 @@
   justify-content: space-evenly;
   border: solid lightgray;
   text-align: left;
-  height: 20%;
   width: 75%;
   margin: 20px auto;
+  padding: 20px;
 }
 
 .rightPannelButtonOne:hover,
@@ -96,16 +94,44 @@
   -webkit-transform: rotate(135deg);
 }
 
+/* Deposit Option Buttons */
+.depositHeader,
+.withdrawHeader {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
 /* Main ATM Screen */
 .mainScreen {
   border: solid black;
-  height: 60vh;
   width: 50%;
   text-align: center;
 }
 
 .mainImg {
   height: 55%;
+}
+
+.pinScreen {
+  border: solid grey;
+  margin: 0 auto;
+  padding: 25px;
+  width: 30%;
+}
+
+/* Show Balance Buttons */
+.showSavings {
+  background-color: turquoise;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.showSavings:hover {
+  background-color: black;
+  color: white;
 }
 
 /* Selection Left Side Pannel */
@@ -119,7 +145,7 @@
 .keypad {
   display: block;
   margin: 0 auto;
-  width: 60%;
+  width: 50%;
 }
 
 .rowOne,
