@@ -6,6 +6,12 @@ const savingsBalance = document.querySelector(".savingsBalance");
 
 const checkingBalance = document.querySelector(".checkingBalance");
 
+const otherAmountWindowDeposit = document.querySelector(".otherAmountDeposit");
+
+const otherAmountWindowWithdraw = document.querySelector(
+  ".otherAmountWithdraw"
+);
+
 // const despositTwenty = document.querySelector(".despositTwenty");
 
 // const depositFifty = document.querySelector(".depositFifty")
@@ -36,7 +42,7 @@ const accountInfo = {
 const showSavingsBalance = () => {
   const savingsAccountBalance = accountInfo.savingsAccount;
 
-  savingsBalance.innerHTML = `$${savingsAccountBalance}`;
+  savingsBalance.innerHTML = `Your Savings Account Balance is $${savingsAccountBalance}`;
 };
 
 // Deposit to Savings Account
@@ -61,9 +67,26 @@ const depositOneHundredDollarsToSavings = () => {
   savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
 };
 
+// Other Amount Screen Keypad Function
+const uploadToOtherAmountWindow = (number) => {
+  otherAmountWindowWithdraw.append(number);
+  otherAmountWindowDeposit.append(number);
+};
+
+// Clear Other Amount Window Function
+const clearOAWindowWithdraw = () => {
+  otherAmountWindowWithdraw.innerHTML = "";
+};
+
+const clearOAWindowDeposit = () => {
+  otherAmountWindowDeposit.innerHTML = "";
+};
+
+// Store value in other amount window
 const depositOtherAmountToSavings = () => {
+  let otherAmountValue = otherAmountWindowDeposit.value;
   const currentSavingsBalance =
-    parseInt(accountInfo.savingsAccount) + parseInt(20);
+    parseInt(accountInfo.savingsAccount) + parseInt(otherAmountValue);
 
   savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
 };
@@ -91,8 +114,9 @@ const withdrawOneHundredDollarsFromSavings = () => {
 };
 
 const withdrawOtherAmountFromSavings = () => {
+  let otherAmountValue = otherAmountWindowWithdraw.value;
   const currentSavingsBalance =
-    parseInt(accountInfo.savingsAccount) - parseInt(20);
+    parseInt(accountInfo.savingsAccount) - parseInt(otherAmountValue);
 
   savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
 };
@@ -101,7 +125,7 @@ const withdrawOtherAmountFromSavings = () => {
 const showCheckingBalance = () => {
   const checkingAccountBalance = accountInfo.checkingAccount;
 
-  checkingBalance.innerHTML = `$${checkingAccountBalance}`;
+  checkingBalance.innerHTML = `Your Checking Account Balance is Currently $${checkingAccountBalance}`;
 };
 
 // Deposit to Savings Account

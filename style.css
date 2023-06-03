@@ -38,6 +38,24 @@
   padding-bottom: 20px;
 }
 
+.otherAmountDeposit,
+.otherAmountWithdraw {
+  border: solid black;
+  width: 50%;
+  padding: 15px;
+  margin: 15px auto;
+}
+
+.otherAmountDepositSubmit,
+.otherAmountWithdrawSubmit {
+  display: block;
+  margin: 0 auto;
+  padding: 8px;
+  border-radius: 20px;
+  background-color: green;
+  color: white;
+}
+
 /* Mini Screen - Right Side Pannel */
 
 .rightPannel {
@@ -119,6 +137,10 @@
   margin: 0 auto;
   padding: 25px;
   width: 30%;
+}
+
+.thankyouMessage {
+  display: none;
 }
 
 /* Show Balance Buttons */
