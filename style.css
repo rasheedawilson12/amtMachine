@@ -1,57 +1,98 @@
 .atmContainer {
   margin: 0 auto;
-  border: solid red;
-  width: 80%;
+  border: solid lightgray;
 }
 
 .miniScreen {
   display: flex;
   justify-content: space-evenly;
-  border: solid blue;
-  height: 60vh;
-  width: 75vw;
+  width: 100%;
 }
 
+/* Mini Screen - Left Side Pannel */
+
 .leftPannel {
-  border: solid green;
+  display: block;
+  border: solid darkgrey;
   height: 60vh;
-  width: 25vw;
+  width: 25%;
 }
 
 .leftPannelButtonOne,
 .leftPannelButtonTwo,
-.leftPannelButtonThree {
-  border: solid turquoise;
-  height: 20vh;
-  width: 25vw;
+.leftPannelButtonThree,
+.leftPannelButtonFour {
+  display: block;
+  justify-content: space-evenly;
+  border: solid lightgrey;
+  text-align: right;
+  height: 20%;
+  width: 75%;
+  margin: 20px auto;
 }
 
-.mainScreen {
-  border: solid purple;
-  height: 60vh;
-  width: 50vw;
-}
+/* Mini Screen - Right Side Pannel */
 
 .rightPannel {
-  border: solid pink;
+  display: block;
   height: 60vh;
-  width: 25vw;
+  width: 25%;
+  border: solid darkgray;
 }
 
 .rightPannelButtonOne,
 .rightPannelButtonTwo,
-.rightPannelButtonThree {
-  border: solid turquoise;
-  height: 20vh;
-  width: 25vw;
+.rightPannelButtonThree,
+.rightPannelButtonFour {
+  display: block;
+  justify-content: space-evenly;
+  border: solid lightgray;
+  text-align: left;
+  height: 20%;
+  width: 75%;
+  margin: 20px auto;
 }
+
+/* Side Pannel BUtton Directional Arros */
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+  margin: 40px auto;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* Left Side Pannel Arrow */
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Right Side Pannel Arrow */
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.mainScreen {
+  border: solid black;
+  height: 60vh;
+  width: 50%;
+  text-align: center;
+}
+
+.mainImg {
+  height: 55%;
+}
+
+/* keypad */
 
 .keypad {
   display: block;
   margin: 0 auto;
-  border: solid peru;
-  height: 40vh;
-  width: 50vw;
+  width: 60%;
 }
 
 .rowOne,
@@ -60,13 +101,41 @@
 .rowFour {
   display: flex;
   justify-content: space-evenly;
-  border: solid orange;
-  height: 20vh;
-  width: 50vw;
 }
 
 .key {
-  border: solid black;
-  height: 10vh;
-  width: 10vw;
+  display: block;
+  border: solid darkgray;
+  background-color: lightgray;
+  padding: 20px;
+  width: 25%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.key:hover {
+  background-color: black;
+  color: white;
+}
+
+.cancel {
+  background-color: red;
+}
+
+.clear {
+  background-color: yellow;
+}
+
+.enter {
+  background-color: green;
+}
+
+/* links */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
 }
