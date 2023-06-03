@@ -31,6 +31,14 @@
   margin: 20px auto;
 }
 
+/* Side Pannel Button Options */
+.optionButton {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
 /* Mini Screen - Right Side Pannel */
 
 .rightPannel {
@@ -53,15 +61,27 @@
   margin: 20px auto;
 }
 
+.rightPannelButtonOne:hover,
+.rightPannelButtonTwo:hover,
+.rightPannelButtonThree:hover,
+.rightPannelButtonFour:hover,
+.leftPannelButtonOne:hover,
+.leftPannelButtonTwo:hover,
+.leftPannelButtonThree:hover,
+.leftPannelButtonFour:hover {
+  background: lightblue;
+  color: white;
+}
+
 /* Side Pannel BUtton Directional Arros */
 .arrow {
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 10px;
-  margin: 40px auto;
+  margin-top: 50px;
   margin-left: 40px;
-  margin-right: 40px;
+  margin-right: 60px;
 }
 
 /* Left Side Pannel Arrow */
@@ -76,6 +96,7 @@
   -webkit-transform: rotate(135deg);
 }
 
+/* Main ATM Screen */
 .mainScreen {
   border: solid black;
   height: 60vh;
@@ -85,6 +106,12 @@
 
 .mainImg {
   height: 55%;
+}
+
+/* Selection Left Side Pannel */
+.insideLeft {
+  height: 100%;
+  width: 25%;
 }
 
 /* keypad */
@@ -114,7 +141,7 @@
 }
 
 .key:hover {
-  background-color: black;
+  background-color: lightblue;
   color: white;
 }
 
