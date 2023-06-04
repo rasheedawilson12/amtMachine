@@ -158,9 +158,11 @@
   border-radius: 20px;
 }
 
-.showSavings:hover {
+.showSavings:hover,
+.showChecking:hover {
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 
 /* Selection Left Side Pannel */
@@ -198,6 +200,7 @@
 .key:hover {
   background-color: lightblue;
   color: white;
+  cursor: pointer;
 }
 
 .cancel {
@@ -212,6 +215,12 @@
   background-color: green;
 }
 
+.cancel,
+.clear,
+.enter {
+  cursor: pointer;
+}
+
 /* links */
 a {
   text-decoration: none;
@@ -220,4 +229,5 @@ a {
 
 a:hover {
   color: white;
+  cursor: pointer;
 }

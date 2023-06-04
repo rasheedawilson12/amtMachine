@@ -12,6 +12,8 @@ const otherAmountWindowWithdraw = document.querySelector(
   ".otherAmountWithdraw"
 );
 
+const thankyouMessage = document.querySelector(".thankyouMessage");
+
 // const despositTwenty = document.querySelector(".despositTwenty");
 
 // const depositFifty = document.querySelector(".depositFifty")
@@ -90,7 +92,11 @@ const depositOtherAmountToSavings = () => {
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) + parseInt(otherAmountValue);
 
-  savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
+  if (otherAmountValue > 5000) {
+    alert("Please come insde and see a teller to complete this transaction");
+  } else {
+    savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
+  }
 };
 
 // Withdraw from Savings Account
@@ -122,7 +128,11 @@ const withdrawOtherAmountFromSavings = () => {
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) - parseInt(otherAmountValue);
 
-  savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
+  if (otherAmountValue > currentSavingsBalance) {
+    alert("Please come inside and see a teller to complete this transaction");
+  } else {
+    savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
+  }
 };
 
 // Display Checking Balance
@@ -132,7 +142,7 @@ const showCheckingBalance = () => {
   checkingBalance.innerHTML = `Your Checking Account Balance is Currently $${checkingAccountBalance}`;
 };
 
-// Deposit to Savings Account
+// Deposit to Checking Account
 const depositTwentyDollarsToChecking = () => {
   const currentCheckingBalance =
     parseInt(accountInfo.checkingAccount) + parseInt(20);
@@ -161,7 +171,11 @@ const depositOtherAmountToChecking = () => {
   const currentCheckingBalance =
     parseInt(accountInfo.checkingAccount) + parseInt(otherAmountValue);
 
-  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+  if (otherAmountValue >= 5000) {
+    alert("Please come inside and see a teller to complete this transaction.");
+  } else {
+    checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+  }
 };
 
 // Withdraw from Checking Account
@@ -193,5 +207,9 @@ const withdrawOtherAmountFromChecking = () => {
   const currentCheckingBalance =
     parseInt(accountInfo.checkingAccount) - parseInt(otherAmountValue);
 
-  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+  if (otherAmountValue > currentCheckingBalance) {
+    alert("Please come inside and see a teller to complete this transaction.");
+  } else {
+    checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+  }
 };
