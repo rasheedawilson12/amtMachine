@@ -59,36 +59,21 @@ const depositTwentyDollarsToSavings = () => {
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) + parseInt(20);
 
-  savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
+  savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}. <br> Thank you for banking with Squirrel Bank. <br> <button class="newTransaction"><a href="index.html">Start New Transaction</a></button>`;
 };
 
-const depositFiftyDollarsToSavingsToSavings = () => {
+const depositFiftyDollarsToSavings = () => {
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) + parseInt(50);
 
-  savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
+  savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}. <br> Thank you for banking with Squirrel Bank. <br> <button class="newTransaction"><a href="index.html">Start New Transaction</a></button>`;
 };
 
 const depositOneHundredDollarsToSavings = () => {
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) + parseInt(100);
 
-  savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
-};
-
-// Other Amount Screen Keypad Function
-const uploadToOtherAmountWindow = (number) => {
-  otherAmountWindowWithdraw.append(number);
-  otherAmountWindowDeposit.append(number);
-};
-
-// Clear Other Amount Window Function
-const clearOAWindowWithdraw = () => {
-  otherAmountWindowWithdraw.innerHTML = "";
-};
-
-const clearOAWindowDeposit = () => {
-  otherAmountWindowDeposit.innerHTML = "";
+  savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}. <br> Thank you for banking with Squirrel Bank. <br> <button class="newTransaction"><a href="index.html">Start New Transaction</a></button>`;
 };
 
 // Store value in other amount window
@@ -102,7 +87,7 @@ const depositOtherAmountToSavings = () => {
   if (otherAmountValue > 5000) {
     alert("Please come insde and see a teller to complete this transaction");
   } else {
-    savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
+    savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}. <br> Thank you for banking with Squirrel Bank. <br> <button class="newTransaction"><a href="index.html">Start New Transaction</a></button>`;
   }
 };
 
@@ -111,21 +96,21 @@ const withdrawTwentyDollarsFromSavings = () => {
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) - parseInt(20);
 
-  savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
+  savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}. <br> Thank you for banking with Squirrel Bank. <br> <button class="newTransaction"><a href="index.html">Start New Transaction</a></button>`;
 };
 
 const withdrawFiftyDollarsFromSavings = () => {
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) - parseInt(50);
 
-  savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
+  savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}. <br> Thank you for banking with Squirrel Bank. <br> <button class="newTransaction"><a href="index.html">Start New Transaction</a></button>`;
 };
 
 const withdrawOneHundredDollarsFromSavings = () => {
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) - parseInt(100);
 
-  savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
+  savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}. <br> Thank you for banking with Squirrel Bank. <br> <button class="newTransaction"><a href="index.html">Start New Transaction</a></button>`;
 };
 
 const withdrawOtherAmountFromSavings = () => {
@@ -138,7 +123,7 @@ const withdrawOtherAmountFromSavings = () => {
   if (otherAmountValue > currentSavingsBalance) {
     alert("Please come inside and see a teller to complete this transaction");
   } else {
-    savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}`;
+    savingsBalance.innerHTML = `Your account balance is now $${currentSavingsBalance}. <br> Thank you for banking with Squirrel Bank. <br> <button class="newTransaction"><a href="index.html">Start New Transaction</a></button>`;
   }
 };
 
@@ -154,21 +139,21 @@ const depositTwentyDollarsToChecking = () => {
   const currentCheckingBalance =
     parseInt(accountInfo.checkingAccount) + parseInt(20);
 
-  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}. <br> Thank you for banking with Squirrel Bank. <br> <button class="newTransaction"><a href="index.html">Start New Transaction</a></button>`;
 };
 
 const depositFiftyDollarsToChecking = () => {
   const currentCheckingBalance =
     parseInt(accountInfo.checkingAccount) + parseInt(50);
 
-  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}. <br> Thank you for banking with Squirrel Bank. <br> <button class="newTransaction"><a href="index.html">Start New Transaction</a></button>`;
 };
 
 const depositOneHundredDollarsToChecking = () => {
   const currentCheckingBalance =
     parseInt(accountInfo.checkingAccount) + parseInt(100);
 
-  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}. <br> Thank you for banking with Squirrel Bank. <br> <button class="newTransaction"><a href="index.html">Start New Transaction</a></button>`;
 };
 
 const depositOtherAmountToChecking = () => {
@@ -181,7 +166,7 @@ const depositOtherAmountToChecking = () => {
   if (otherAmountValue >= 5000) {
     alert("Please come inside and see a teller to complete this transaction.");
   } else {
-    checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+    checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}. <br> Thank you for banking with Squirrel Bank. <br> <button class="newTransaction"><a href="index.html">Start New Transaction</a></button>`;
   }
 };
 
@@ -190,21 +175,21 @@ const withdrawTwentyDollarsFromChecking = () => {
   const currentCheckingBalance =
     parseInt(accountInfo.checkingAccount) - parseInt(20);
 
-  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}. <br> Thank you for banking with Squirrel Bank. <br> <button class="newTransaction"><a href="index.html">Start New Transaction</a></button>`;
 };
 
 const withdrawFiftyDollarsFromChecking = () => {
   const currentCheckingBalance =
     parseInt(accountInfo.checkingAccount) - parseInt(50);
 
-  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}. <br> Thank you for banking with Squirrel Bank. <br> <button class="newTransaction"><a href="index.html">Start New Transaction</a></button>`;
 };
 
 const withdrawOneHundredDollarsFromChecking = () => {
   const currentCheckingBalance =
     parseInt(accountInfo.checkingAccount) - parseInt(100);
 
-  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+  checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}. <br> Thank you for banking with Squirrel Bank. <br> <button class="newTransaction"><a href="index.html">Start New Transaction</a></button>`;
 };
 
 const withdrawOtherAmountFromChecking = () => {
@@ -217,6 +202,6 @@ const withdrawOtherAmountFromChecking = () => {
   if (otherAmountValue > currentCheckingBalance) {
     alert("Please come inside and see a teller to complete this transaction.");
   } else {
-    checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
+    checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}. <br> Thank you for banking with Squirrel Bank. <br> <button class="newTransaction"><a href="index.html">Start New Transaction</a></button>`;
   }
 };

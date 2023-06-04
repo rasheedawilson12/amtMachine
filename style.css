@@ -147,17 +147,16 @@
   width: 30%;
 }
 
-.thankyouMessage {
-  display: none;
-}
-
 /* Show Balance Buttons */
 .showSavings,
 .showChecking {
-  background-color: turquoise;
+  background-color: lime;
   border: none;
   padding: 10px;
   border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .showSavings:hover,
@@ -165,6 +164,17 @@
   background-color: black;
   color: white;
   cursor: pointer;
+}
+
+.newTransaction {
+  background-color: lime;
+  border: none;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /* Selection Left Side Pannel */
