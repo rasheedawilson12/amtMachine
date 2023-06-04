@@ -125,6 +125,8 @@
 .otherAmountButton {
   font-size: 28px;
   text-align: center;
+  margin: 0 auto;
+  padding: 0;
 }
 
 /* Main ATM Screen */
@@ -205,19 +207,29 @@
 
 .cancel {
   background-color: red;
+  text-transform: uppercase;
 }
 
 .clear {
   background-color: yellow;
+  text-transform: uppercase;
 }
 
 .enter {
   background-color: green;
+  text-transform: uppercase;
+}
+
+.help {
+  background-color: blueviolet;
+  color: aliceblue;
+  text-transform: uppercase;
 }
 
 .cancel,
 .clear,
-.enter {
+.enter,
+.help {
   cursor: pointer;
 }
 

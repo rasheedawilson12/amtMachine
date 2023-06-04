@@ -28,6 +28,13 @@ const uploadToPinScreen = (number) => {
   pinScreen.append(number);
 };
 
+// Help button musseage
+const helpButton = () => {
+  const helpButtonMessage = alert(
+    "For help with ATM Transactions, please come into your local branch for assistance. Branch hours are M-F 9am-5pm. For help outisde business hours, feel free to conact our 24/7 technical support center at 1-888-867-5309. Thank you for banking with Squirrel Bank."
+  );
+};
+
 // Account Information Object
 const accountInfo = {
   name: "Jane Black",
