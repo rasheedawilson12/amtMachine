@@ -87,6 +87,7 @@
 .leftPannelButtonFour:hover {
   background: lightblue;
   color: white;
+  cursor: pointer;
 }
 
 /* Side Pannel BUtton Directional Arros */
@@ -121,6 +122,11 @@
   margin-top: 10px;
 }
 
+.otherAmountButton {
+  font-size: 28px;
+  text-align: center;
+}
+
 /* Main ATM Screen */
 .mainScreen {
   border: solid black;
@@ -144,7 +150,8 @@
 }
 
 /* Show Balance Buttons */
-.showSavings {
+.showSavings,
+.showChecking {
   background-color: turquoise;
   border: none;
   padding: 10px;

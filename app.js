@@ -84,7 +84,9 @@ const clearOAWindowDeposit = () => {
 
 // Store value in other amount window
 const depositOtherAmountToSavings = () => {
-  let otherAmountValue = otherAmountWindowDeposit.value;
+  let otherAmountValue = prompt(
+    "How much would you like to deposit to your account?"
+  );
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) + parseInt(otherAmountValue);
 
@@ -114,7 +116,9 @@ const withdrawOneHundredDollarsFromSavings = () => {
 };
 
 const withdrawOtherAmountFromSavings = () => {
-  let otherAmountValue = otherAmountWindowWithdraw.value;
+  let otherAmountValue = prompt(
+    "How much would you like to withdraw from your account?"
+  );
   const currentSavingsBalance =
     parseInt(accountInfo.savingsAccount) - parseInt(otherAmountValue);
 
@@ -150,9 +154,12 @@ const depositOneHundredDollarsToChecking = () => {
   checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
 };
 
-const depositOtherAmountDollarsToChecking = () => {
+const depositOtherAmountToChecking = () => {
+  let otherAmountValue = prompt(
+    "How much would you like to deposit to your account?"
+  );
   const currentCheckingBalance =
-    parseInt(accountInfo.checkingAccount) + parseInt(20);
+    parseInt(accountInfo.checkingAccount) + parseInt(otherAmountValue);
 
   checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
 };
@@ -180,8 +187,11 @@ const withdrawOneHundredDollarsFromChecking = () => {
 };
 
 const withdrawOtherAmountFromChecking = () => {
+  let otherAmountValue = prompt(
+    "How much would you like to withdraw from your account?"
+  );
   const currentCheckingBalance =
-    parseInt(accountInfo.checkingAccount) - parseInt(20);
+    parseInt(accountInfo.checkingAccount) - parseInt(otherAmountValue);
 
   checkingBalance.innerHTML = `Your account balance is now $${currentCheckingBalance}`;
 };
