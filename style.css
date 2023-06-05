@@ -1,20 +1,26 @@
+body {
+  margin: 0;
+}
 .atmContainer {
   margin: 0 auto;
-  border: solid lightgray;
+  border: solid #f3efc9;
+  background-color: #f38a1e;
+  width: 100%;
 }
 
 .miniScreen {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  border: solid #f3efc9;
 }
 
 /* Mini Screen - Left Side Pannel */
 
 .leftPannel {
   display: block;
-  border: solid darkgrey;
   width: 25%;
+  padding-top: 50px;
 }
 
 .leftPannelButtonOne,
@@ -23,11 +29,13 @@
 .leftPannelButtonFour {
   display: block;
   justify-content: space-evenly;
-  border: solid lightgrey;
-  text-align: right;
-  width: 75%;
+  background-color: #f3efc9;
+  border: solid #bb692d;
+  text-align: center;
+  width: 50%;
   margin: 20px auto;
-  padding: 20px;
+  padding: 30px;
+  border-radius: 15px;
 }
 
 /* Side Pannel Button Options */
@@ -36,6 +44,12 @@
   font-size: 35px;
   font-weight: bold;
   padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.blankButton {
+  width: 50%;
+  padding: 50px;
 }
 
 .otherAmountDeposit,
@@ -61,7 +75,7 @@
 .rightPannel {
   display: block;
   width: 25%;
-  border: solid darkgray;
+  padding-top: 50px;
 }
 
 .rightPannelButtonOne,
@@ -70,11 +84,13 @@
 .rightPannelButtonFour {
   display: block;
   justify-content: space-evenly;
-  border: solid lightgray;
-  text-align: left;
-  width: 75%;
+  background-color: #f3efc9;
+  border: solid #bb692d;
+  text-align: center;
+  width: 50%;
   margin: 20px auto;
-  padding: 20px;
+  padding: 30px;
+  border-radius: 15px;
 }
 
 .rightPannelButtonOne:hover,
@@ -85,55 +101,53 @@
 .leftPannelButtonTwo:hover,
 .leftPannelButtonThree:hover,
 .leftPannelButtonFour:hover {
-  background: lightblue;
+  background: orange;
   color: white;
   cursor: pointer;
-}
-
-/* Side Pannel BUtton Directional Arros */
-.arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 10px;
-  margin-top: 50px;
-  margin-left: 40px;
-  margin-right: 60px;
-}
-
-/* Left Side Pannel Arrow */
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-/* Right Side Pannel Arrow */
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
 }
 
 /* Deposit Option Buttons */
 .depositHeader,
 .withdrawHeader {
   display: block;
+  color: #f3efc9;
   text-align: center;
   font-size: 30px;
+  font-weight: bold;
   margin-top: 10px;
+  text-transform: uppercase;
 }
 
 .otherAmountButton {
-  font-size: 28px;
+  font-size: 30px;
   text-align: center;
   margin: 0 auto;
   padding: 0;
+  text-transform: uppercase;
 }
 
 /* Main ATM Screen */
 .mainScreen {
-  border: solid black;
+  background-image: url("https://media.istockphoto.com/id/1405625261/vector/acorn-cartoon-seamless-pattern-isolated-vector-illustration-on-white-background-oak-tree.jpg?s=612x612&w=0&k=20&c=00CPSTd_tXEBr-V0SO4S2-XxyobrhGpXMFxmfb_t_N0=");
+  border: solid #f3efc9;
   width: 50%;
   text-align: center;
+  padding-top: 50px;
+}
+
+.insideScreen {
+  background-color: #bb692d;
+  color: #f3efc9;
+  margin: 0 auto;
+  padding: 15px;
+  border: solid #f38a1e;
+  border-radius: 20px;
+  width: 75%;
+  height: 75%;
+}
+
+.insideHeader {
+  text-transform: uppercase;
 }
 
 .mainImg {
@@ -141,7 +155,7 @@
 }
 
 .pinScreen {
-  border: solid grey;
+  border: solid #f3efc9;
   margin: 0 auto;
   padding: 25px;
   width: 30%;
@@ -150,7 +164,8 @@
 /* Show Balance Buttons */
 .showSavings,
 .showChecking {
-  background-color: lime;
+  background-color: #f3efc9;
+  color: #bb692d;
   border: none;
   padding: 10px;
   border-radius: 20px;
@@ -161,13 +176,13 @@
 
 .showSavings:hover,
 .showChecking:hover {
-  background-color: black;
+  background-color: orange;
   color: white;
   cursor: pointer;
 }
 
 .newTransaction {
-  background-color: lime;
+  background-color: #f38a1e;
   border: none;
   margin-top: 10px;
   padding: 10px;
@@ -201,8 +216,8 @@
 
 .key {
   display: block;
-  border: solid darkgray;
-  background-color: lightgray;
+  border: solid #bb692d;
+  background-color: #f3efc9;
   padding: 20px;
   width: 25%;
   text-align: center;
@@ -210,13 +225,14 @@
 }
 
 .key:hover {
-  background-color: lightblue;
+  background-color: orange;
   color: white;
   cursor: pointer;
 }
 
 .cancel {
   background-color: red;
+  color: aliceblue;
   text-transform: uppercase;
 }
 
@@ -227,6 +243,7 @@
 
 .enter {
   background-color: green;
+  color: aliceblue;
   text-transform: uppercase;
 }
 
@@ -246,10 +263,9 @@
 /* links */
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
-a:hover {
-  color: white;
-  cursor: pointer;
+a .optionButton {
+  color: black;
 }
